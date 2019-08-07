@@ -1,40 +1,42 @@
 # NativeScript FontScale
 
-Add your plugin badges here. See [nativescript-urlhandler](https://github.com/hypery2k/nativescript-urlhandler) for example.
+[![Build Status](https://img.shields.io/travis/darkmantle/nativescript-font-scale/master?style=for-the-badge)](https://travis-ci.org/darkmantle/nativescript-font-scale)
+[![npm](https://img.shields.io/npm/v/nativescript-font-scale?style=for-the-badge)](https://google.com)
 
-Then describe what's the purpose of your plugin. 
+The purpose of this plugin is to automatically scale fonts based on a11y settings on the device, while keeping custom styling.
 
-In case you develop UI plugin, this is where you can add some screenshots.
-
-## (Optional) Prerequisites / Requirements
-
-Describe the prerequisites that the user need to have installed before using your plugin. See [nativescript-firebase plugin](https://github.com/eddyverbruggen/nativescript-plugin-firebase) for example.
+**Currently works on iOS only**
 
 ## Installation
 
-Describe your plugin installation steps. Ideally it would be something like:
-
-```javascript
-tns plugin add <your-plugin-name>
+```sh
+tns plugin add nativescript-font-scale
 ```
 
 ## Usage 
 
-Describe any usage specifics for your plugin. Give examples for Android, iOS, Angular if needed. See [nativescript-drop-down](https://www.npmjs.com/package/nativescript-drop-down) for example.
-	
-	```javascript
-    Usage code snippets here
-    ```)
+#### Core
+Once added onto your page, you can use it as you would a regular Label including all properties.
+```xml
+<Page class="page"
+    navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:ui="nativescript-font-scale">
+    <StackLayout>
+        <ui:FontScale class="test" text="Testing" />
+    </StackLayout>
+</Page>
+```
 
-## API
+#### Angular
+Once you register the element as below, you can then use it anywhere as you would a regular Label including all properties.
 
-Describe your plugin methods and properties here. See [nativescript-feedback](https://github.com/EddyVerbruggen/nativescript-feedback) for example.
-    
-| Property | Default | Description |
-| --- | --- | --- |
-| some property | property default value | property description, default values, etc.. |
-| another property | property default value | property description, default values, etc.. |
-    
-## License
+```ts
+registerElement("ScaledLabel", () => require("nativescript-font-scale").FontScale);
+```
 
-Apache License Version 2.0, January 2004
+```html
+<StackLayout>
+	<ScaledLabel text="Testing">
+</StackLayout>
+```
