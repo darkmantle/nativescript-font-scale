@@ -9,6 +9,8 @@ matrix:
       os: osx
       env:
         - WebPack="iOS"
+      before_install:
+        - travis_wait pod repo update
       osx_image: xcode10.2
       language: node_js 
       node_js: "10"
