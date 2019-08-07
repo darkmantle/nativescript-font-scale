@@ -1,0 +1,8 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo" 
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:ui="nativescript-font-scale">
+    <StackLayout>
+        <ui:FontScale class="test" text="Testing" />
+    </StackLayout>
+</Page>
