@@ -16,7 +16,8 @@ tns plugin add nativescript-font-scale
 ## Usage 
 
 #### Core
-Once added onto your page, you can use the components using the same properties as the default NativeScript ones
+Once added onto your page, you can use the components using the same properties as the default NativeScript ones. To disable the scaling you can add the "scale" property with "false" as the value. All components will scale by default.
+
 ```xml
 <Page class="page"
     navigatingTo="onNavigatingTo" 
@@ -29,7 +30,7 @@ Once added onto your page, you can use the components using the same properties 
         </TabStrip>
         <TabContentItem>
             <StackLayout>
-                <ui:Label class="test" text="Testing2" />
+                <ui:Label scale="false" class="test" text="Testing2" />
                 <ui:Button text="Test button" class="btn" />
             </StackLayout>
         </TabContentItem>
@@ -38,7 +39,7 @@ Once added onto your page, you can use the components using the same properties 
 ```
 
 #### Angular
-Once you register the element as below, you can then use it anywhere as you would a regular Label including all properties.
+Once registered in your Angular application, you can use the components using the same properties as the default NativeScript ones. To disable the scaling you can add the "scale" property with "false" as the value. All components will scale by default.
 
 ```ts
 registerElement("ScaledLabel", () => require("nativescript-font-scale").Label);
@@ -54,9 +55,10 @@ registerElement("ScaledTabStripItem", () => require("nativescript-font-scale").T
     <TabContentItem>
         <StackLayout>
             <Label class="test" text="Testing2"></ScaledLabel>
-            <Button text="Test button" class="btn"></ScaledButton>
+            <Button scale="false" text="Test button" class="btn"></ScaledButton>
         </StackLayout>
     </TabContentItem>
 </BottomNavigation>
 ```
+
 **Note: You can use Label, Button and TabStripItem to override all existing ones, but as I've not fully tested everything, I would not recommend it.**
