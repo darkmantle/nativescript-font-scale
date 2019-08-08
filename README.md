@@ -1,7 +1,7 @@
 # NativeScript FontScale
 
-[![Build Status](https://img.shields.io/travis/darkmantle/nativescript-font-scale/master?style=for-the-badge)](https://travis-ci.org/darkmantle/nativescript-font-scale)
-[![npm](https://img.shields.io/npm/v/nativescript-font-scale?style=for-the-badge)](https://google.com)
+[![Build Status](https://travis-ci.org/darkmantle/nativescript-font-scale.svg?branch=master)](https://travis-ci.org/darkmantle/nativescript-font-scale)
+[![npm version](https://badge.fury.io/js/nativescript-font-scale.svg)](https://badge.fury.io/js/nativescript-font-scale)
 
 The purpose of this plugin is to automatically scale fonts based on a11y settings on the device, while keeping custom styling.
 
