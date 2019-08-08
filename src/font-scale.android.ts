@@ -1,5 +1,7 @@
-import { Common } from './font-scale.common';
+import { LabelCommon, ButtonCommon, TabStripItemCommon } from "./font-scale.common";
 
-export class FontScale extends Common {
+export class Label extends LabelCommon {}
 
-}
+export class Button extends ButtonCommon {}
+
+export class TabStripItem extends TabStripItemCommon {}

@@ -1,6 +1,7 @@
-import { Common } from './font-scale.common';
-export declare class FontScale extends Common {
-  // define your typings manually
-  // or..
-  // take the ios or android .d.ts files and copy/paste them here
-}
+import { LabelCommon, ButtonCommon, TabStripItemCommon } from './font-scale.common';
+
+export declare class Label extends LabelCommon {}
+
+export declare class Button extends ButtonCommon {}
+
+export declare class TabStripItem extends TabStripItemCommon {}
