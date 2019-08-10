@@ -12,7 +12,7 @@ export class Label extends LabelCommon {
 
         this.on("loaded", () => {
             const ios: UILabel = this.ios;
-            
+
             if (!this.scale) return;
 
             const newFont = new Font(this.style.fontFamily, this.style.fontSize, null, this.style.fontWeight);
@@ -56,7 +56,7 @@ export class TabStripItem extends TabStripItemCommon {
 
         this.on("loaded", () => {
             const item: UITabBarItem = this.nativeView;
-            
+
             if (!this.scale) return;
 
             const test: NSDictionary<String, any> = item.titleTextAttributesForState(UIControlState.Normal);
@@ -67,7 +67,7 @@ export class TabStripItem extends TabStripItemCommon {
 
             const scaledFont = UIFontMetrics.defaultMetrics.scaledFontForFont(newFont.getUIFont(null));
             attrs.setValueForKey(scaledFont, NSFontAttributeName);
-            
+
             item.setTitleTextAttributesForState(attrs, UIControlState.Normal);
         });
     }
