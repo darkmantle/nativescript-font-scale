@@ -15,7 +15,7 @@ tns plugin add nativescript-font-scale
 
 ## Usage 
 
-#### Core
+### Core
 Once added onto your page, you can use the components using the same properties as the default NativeScript ones. To disable the scaling you can add the "scale" property with "false" as the value. All components will scale by default.
 
 ```xml
@@ -38,7 +38,7 @@ Once added onto your page, you can use the components using the same properties 
 </Page>
 ```
 
-#### Angular
+### Angular
 Once registered in your Angular application, you can use the components using the same properties as the default NativeScript ones. To disable the scaling you can add the "scale" property with "false" as the value. All components will scale by default.
 
 ```ts
@@ -62,3 +62,17 @@ registerElement("ScaledTabStripItem", () => require("nativescript-font-scale").T
 ```
 
 **Note: You can use Label, Button and TabStripItem to override all existing ones, but as I've not fully tested everything, I would not recommend it.**
+
+
+## Todo
+- [x] Android support (if necessary?)
+- [ ] FormattedString
+- [ ] ActionBar
+- [ ] TextField
+- [ ] TextView
+- [ ] DatePicker
+- [ ] TimePicker
+- [ ] Dialog
+- [ ] ListPicker
+- [ ] SegmentedBar
+- [ ] SearchBar
