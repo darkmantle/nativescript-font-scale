@@ -5,7 +5,9 @@
 
 The purpose of this plugin is to automatically scale fonts based on a11y settings on the device, while keeping custom styling.
 
-**Currently works on iOS 10+ only**
+**Currently works on iOS 10+ only, and applies to labels, buttons and tabs only.**
+
+**Tab support currently works, however it requires a restart of the application, unlike other components. This will be fixed.**
 
 ## Installation
 
