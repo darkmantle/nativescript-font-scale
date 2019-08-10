@@ -1,6 +1,6 @@
 # NativeScript FontScale
 
-[![npm](https://img.shields.io/npm/dt/nativescript-font-scale)](https://www.npmjs.com/package/nativescript-font-scale) ![GitHub](https://img.shields.io/github/license/darkmantle/nativescript-font-scale) [![npm](https://img.shields.io/npm/v/nativescript-font-scale)](https://www.npmjs.com/package/nativescript-font-scale) [![codebeat badge](https://codebeat.co/badges/f5d4ed1b-3f2a-4b89-87c7-45a502ee7c4d)](https://codebeat.co/projects/github-com-darkmantle-nativescript-font-scale-master)
+[![npm](https://img.shields.io/npm/dt/nativescript-font-scale)](https://www.npmjs.com/package/nativescript-font-scale) ![GitHub](https://img.shields.io/github/license/darkmantle/nativescript-font-scale) [![npm](https://img.shields.io/npm/v/nativescript-font-scale)](https://www.npmjs.com/package/nativescript-font-scale) [![codebeat badge](https://codebeat.co/badges/f5d4ed1b-3f2a-4b89-87c7-45a502ee7c4d)](https://codebeat.co/projects/github-com-darkmantle-nativescript-font-scale-master)![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/darkmantle/nativescript-font-scale)
 
 The purpose of this plugin is to automatically scale fonts based on a11y settings on the iOS device, while keeping custom styling.
 
