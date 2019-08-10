@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/darkmantle/nativescript-font-scale.svg?branch=master)](https://travis-ci.org/darkmantle/nativescript-font-scale)
 [![npm version](https://badge.fury.io/js/nativescript-font-scale.svg)](https://badge.fury.io/js/nativescript-font-scale)
 
-The purpose of this plugin is to automatically scale fonts based on a11y settings on the device, while keeping custom styling.
+The purpose of this plugin is to automatically scale fonts based on a11y settings on the iOS device, while keeping custom styling.
 
-**Currently works on iOS 10+ only, and applies to labels, buttons and tabs only.**
+**Currently works on iOS 10+ only, and applies to labels, buttons and tabs only. Android does this automatically.**
 
 **Tab support currently works, however it requires a restart of the application, unlike other components. This will be fixed.**
 
