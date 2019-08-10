@@ -65,7 +65,7 @@ registerElement("ScaledTabStripItem", () => require("nativescript-font-scale").T
 
 
 ## Todo
-- [x] Android support (if necessary?)
+- [ ] Android support (if necessary?)
 - [ ] FormattedString
 - [ ] ActionBar
 - [ ] TextField
