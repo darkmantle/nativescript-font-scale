@@ -164,7 +164,7 @@ module.exports = env => {
                     vendor: {
                         name: "vendor",
                         chunks: "all",
-                        test: (module, chunks) => {
+                        test: (module, _) => {
                             const moduleName = module.nameForCondition ? module.nameForCondition() : '';
                             return /[\\/]node_modules[\\/]/.test(moduleName) ||
                                 appComponents.some(comp => comp === moduleName);
@@ -223,14 +223,14 @@ module.exports = env => {
 
                 // tns-core-modules reads the app.css and its imports using css-loader
                 {
-                    test: /[\/|\\]app\.css$/,
+                    test: /[/|\\]app\.css$/,
                     use: [
                         "nativescript-dev-webpack/style-hot-loader",
                         { loader: "css-loader", options: { url: false } }
                     ]
                 },
                 {
-                    test: /[\/|\\]app\.scss$/,
+                    test: /[/|\\]app\.scss$/,
                     use: [
                         "nativescript-dev-webpack/style-hot-loader",
                         { loader: "css-loader", options: { url: false } },
@@ -239,8 +239,8 @@ module.exports = env => {
                 },
 
                 // Angular components reference css files and their imports using raw-loader
-                { test: /\.css$/, exclude: /[\/|\\]app\.css$/, use: "raw-loader" },
-                { test: /\.scss$/, exclude: /[\/|\\]app\.scss$/, use: ["raw-loader", "resolve-url-loader", "sass-loader"] },
+                { test: /\.css$/, exclude: /[/|\\]app\.css$/, use: "raw-loader" },
+                { test: /\.scss$/, exclude: /[/|\\]app\.scss$/, use: ["raw-loader", "resolve-url-loader", "sass-loader"] },
 
                 {
                     test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
@@ -254,7 +254,7 @@ module.exports = env => {
                 // Mark files inside `@angular/core` as using SystemJS style dynamic imports.
                 // Removing this will cause deprecation warnings to appear.
                 {
-                    test: /[\/\\]@angular[\/\\]core[\/\\].+\.js$/,
+                    test: /[/\\]@angular[/\\]core[/\\].+\.js$/,
                     parser: { system: true },
                 },
             ],
