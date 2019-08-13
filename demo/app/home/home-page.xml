@@ -11,7 +11,7 @@
         <TabContentItem>
             <StackLayout>
                 <ui:Label class="test" text="Testing2" />
-                <ui:Button text="Test button" class="btn" />
+                <ui:Button text="Test button" class="btn2" />
             </StackLayout>
         </TabContentItem>
 
