@@ -15,7 +15,7 @@ export class Label extends LabelCommon {
 
             if (!this.scale) return;
 
-            const newFont = new Font(this.style.fontFamily, this.style.fontSize, null, this.style.fontWeight);
+            const newFont = new Font(this.style.fontFamily, this.style.fontSize || 17, null, this.style.fontWeight);
             ios.font = UIFontMetrics.defaultMetrics.scaledFontForFont(newFont.getUIFont(null));
 
             ios.adjustsFontForContentSizeCategory = true;
@@ -37,7 +37,9 @@ export class Button extends ButtonCommon {
 
             if (!this.scale) return;
 
-            const newFont = new Font(this.style.fontFamily, this.style.fontSize, null, this.style.fontWeight);
+            console.log(this.style.fontSize);
+
+            const newFont = new Font(this.style.fontFamily, this.style.fontSize || 17, null, this.style.fontWeight);
             ios.font = UIFontMetrics.defaultMetrics.scaledFontForFont(newFont.getUIFont(null));
 
             ios.adjustsFontForContentSizeCategory = true;
