@@ -10,27 +10,16 @@ export class LabelCommon extends Label {
     }
 }
 
-export const buttonScaleProperty = new Property<ButtonCommon, boolean>({
+const scaleProps = {
     name: "scale",
     defaultValue: true,
     valueConverter: booleanConverter,
     affectsLayout: true
-});
+};
 
-export const labelScaleProperty = new Property<LabelCommon, boolean>({
-    name: "scale",
-    defaultValue: true,
-    valueConverter: booleanConverter,
-    affectsLayout: true
-});
-
-export const tabStripScaleProperty = new Property<TabStripItemCommon, boolean>({
-    name: "scale",
-    defaultValue: true,
-    valueConverter: booleanConverter,
-    affectsLayout: true
-});
-
+export const buttonScaleProperty = new Property<ButtonCommon, boolean>(scaleProps);
+export const labelScaleProperty = new Property<LabelCommon, boolean>(scaleProps);
+export const tabStripScaleProperty = new Property<TabStripItemCommon, boolean>(scaleProps);
 
 export class ButtonCommon extends Button {
     public scale: boolean;
