@@ -164,7 +164,7 @@ module.exports = env => {
                     vendor: {
                         name: "vendor",
                         chunks: "all",
-                        test: (module, _) => {
+                        test: (module) => {
                             const moduleName = module.nameForCondition ? module.nameForCondition() : '';
                             return /[\\/]node_modules[\\/]/.test(moduleName) ||
                                 appComponents.some(comp => comp === moduleName);

@@ -1,0 +1,4 @@
+exclude:
+  - /demo/*
+  - /demo-angular/*
+component_depth: 15
