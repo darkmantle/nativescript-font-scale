@@ -1,4 +1,5 @@
 exclude:
   - /demo/*
   - /demo-angular/*
+  - /publish/*
 component_depth: 15
