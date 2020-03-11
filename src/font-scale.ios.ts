@@ -1,5 +1,5 @@
 import { Font, FontWeight } from "tns-core-modules/ui/styling/font";
-import { device } from "tns-core-modules/platform"
+import { device } from "tns-core-modules/platform";
 import { ButtonCommon, LabelCommon, TabStripItemCommon, labelScaleProperty, buttonScaleProperty, tabStripScaleProperty } from "./font-scale.common";
 
 labelScaleProperty.register(LabelCommon);
