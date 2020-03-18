@@ -1,5 +1,5 @@
 import { Font, FontWeight } from "tns-core-modules/ui/styling/font";
-
+import { device } from "tns-core-modules/platform";
 import { ButtonCommon, LabelCommon, TabStripItemCommon, labelScaleProperty, buttonScaleProperty, tabStripScaleProperty } from "./font-scale.common";
 
 labelScaleProperty.register(LabelCommon);
@@ -14,6 +14,7 @@ export class Label extends LabelCommon {
             const ios: UILabel = this.ios;
 
             if (!this.scale) return;
+            if (parseInt(device.osVersion) < 11) return;
 
             const newFont = new Font(this.style.fontFamily, this.style.fontSize || 17, null, this.style.fontWeight);
             ios.font = UIFontMetrics.defaultMetrics.scaledFontForFont(newFont.getUIFont(null));
@@ -36,6 +37,7 @@ export class Button extends ButtonCommon {
             const ios: UILabel = btn.titleLabel;
 
             if (!this.scale) return;
+            if (parseInt(device.osVersion) < 11) return;
 
             console.log(this.style.fontSize);
 
@@ -60,6 +62,7 @@ export class TabStripItem extends TabStripItemCommon {
             const item: UITabBarItem = this.nativeView;
 
             if (!this.scale) return;
+            if (parseInt(device.osVersion) < 11) return;
 
             const test: NSDictionary<String, any> = item.titleTextAttributesForState(UIControlState.Normal);
             const font: UIFont = test.valueForKey("NSFont");
